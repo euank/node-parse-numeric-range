@@ -1,7 +1,7 @@
 node-parse-numeric-range
 ========================
 
-Parses expressions like 1-10,20-30. Returns an energetic array.
+Parses expressions like 1-10,20-30. Returns an energetic (as opposed to lazy) array.
 
 
 ## Supported Expressions
@@ -15,6 +15,7 @@ Comprehensive supported expression examples:
 |    -10     |  [-10]       |
 |   -3,-3    |[-3, -3]      |
 |  -1-2,-2   |[-1,0,1,2,-2] |
+|  -1--2     |[-1,-2]       |
 |  -1..2,-2  |[-1,0,1,2,-2] |
 |  -1...3,-2 |[-1,0,1,2,-2] |
 
