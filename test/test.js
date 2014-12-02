@@ -43,5 +43,14 @@ describe('range-parser', function(){
     it('should parse -1..2,-1...2', function(){
       peq('-1..2,-1...2', [-1,0,1,2,-1,0,1]);
     });
+		it('should parse 1‥3', function() {
+			peq('1‥3', [1,2,3]);
+		});
+		it('should parse 1⋯3', function() {
+			peq('1⋯3', [1,2]);
+		});
+		it('should parse 1…3', function() {
+			peq('1…3', [1,2]);
+		});
   });
 });

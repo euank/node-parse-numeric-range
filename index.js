@@ -5,7 +5,7 @@ function parsePart(str) {
   }
   var m;
   // 1-5 or 1..5 (equivilant) or 1...5 (doesn't include 5)
-  if((m = str.match(/^(-?\d+)(-|\.\.\.?)(-?\d+)$/))) {
+  if((m = str.match(/^(-?\d+)(-|\.\.\.?|\u2025|\u2026|\u22EF)(-?\d+)$/))) {
     var lhs = m[1];
     var sep = m[2];
     var rhs = m[3];
@@ -16,7 +16,7 @@ function parsePart(str) {
       var incr = lhs < rhs ? 1 : -1;
 
       // Make it inclusive by moving the right 'stop-point' away by one.
-      if(sep == '-' || sep == '..') {
+      if(sep == '-' || sep == '..' || sep == '\u2025') {
         rhs += incr;
       }
 
