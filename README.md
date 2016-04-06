@@ -18,6 +18,9 @@ Comprehensive supported expression examples:
 |  -1--2     |[-1,-2]       |
 |  -1..2,-2  |[-1,0,1,2,-2] |
 |  -1...3,-2 |[-1,0,1,2,-2] |
+|   1⋯3      |[1,2]         |
+|  1…3       |[1,2]         |
+|  1‥3       |[1,2,3]       |
 
 
 What's this useful for? Well, letting users input these sorts of things and then
