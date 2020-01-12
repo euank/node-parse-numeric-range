@@ -1,5 +1,5 @@
-var expect = require('chai').expect;
-var strparse = require('../index').parse;
+import { expect } from 'chai'
+import strparse from '../index.js'
 
 function peq(x, y) {
   expect(strparse(x)).to.eql(y);
