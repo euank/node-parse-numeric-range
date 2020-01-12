@@ -1,6 +1,6 @@
 {
   "name": "parse-numeric-range",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Takes a string, such as \"1,2,3-10,5-8\" and turns it into an array of numbers",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "utility",
     "arrays"
   ],
-  "author": "Euank",
+  "author": "Euan Kemp",
   "license": "ISC",
   "homepage": "https://github.com/euank/node-parse-numeric-range",
   "repository": {
