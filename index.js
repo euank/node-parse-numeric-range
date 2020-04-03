@@ -4,7 +4,7 @@
  */
 export default function parsePart (string) {
   let res = [], m
-  for (let str of string.split(',')) {
+  for (let str of string.split(',').map(str => str.trim())) {
     // just a number
     if (/^-?\d+$/.test(str)) {
       res.push(parseInt(str, 10))

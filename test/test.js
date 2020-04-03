@@ -52,5 +52,8 @@ describe('range-parser', function(){
     it('should parse 1…3', function() {
       peq('1…3', [1,2]);
     });
+    it('should parse ranges with a space in between', function() {
+      peq('1-2, 3-4', [1,2,3,4]);
+    });
   });
 });
