@@ -32,9 +32,22 @@ making them programmatically useful.
 First, `npm install parse-numeric-range`.
 
 ```javascript
-var rangeParser = require('parse-numeric-range');
+const rangeParser = require("parse-numeric-range");
 
-var nums = rangeParser.parse('4,6,8-10,12,14..16,18,20...23');
+const numbers = rangeParser("4,6,8-10,12,14..16,18,20...23");
 
-console.log("The first " + nums.length + " composite numbers are: " + nums.join(', '));
+console.log(
+  `The first ${numbers.length} composite numbers are: ${numbers.join(", ")}`,
+);
+```
+
+### ES6
+```jsx
+import rangeParser from "parse-numeric-range";
+
+const numbers = rangeParser("4,6,8-10,12,14..16,18,20...23");
+
+console.log(
+  `The first ${numbers.length} composite numbers are: ${numbers.join(", ")}`,
+);
 ```
